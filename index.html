@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Upcoming Jobs</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oneapplication.html">One application</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Upcoming Jobs Section -->
+    <div class="container mt-5">
+        <h2>Upcoming Jobs</h2>
+
+        <!-- Dropdown Menu -->
+        <div class="mb-3">
+            <label for="jobFilter" class="form-label">Filter Jobs:</label>
+            <select class="form-select" id="jobFilter">
+                <option selected>Choose...</option>
+                <option value="today">Today</option>
+                <option value="week">This Week</option>
+                <option value="range">Specific Range</option>
+            </select>
+        </div>
+
+        <!-- Jobs Table -->
+        <table class="table table-striped">
+            <thead>
+                <tr>
+                    <th>Client</th>
+                    <th>Location</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Progress</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Job Entry 1 -->
+                <tr onclick="location.href='oneapplication.html'" style="cursor: pointer;">
+                    <td>Client A</td>
+                    <td>London</td>
+                    <td>clienta@example.com</td>
+                    <td>userA</td>
+                    <td>09/01/2025</td>
+                    <td>10:00 AM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>✅ ✅ ✅</td>
+                </tr>
+                </a>
+
+                <!-- Job Entry 2 -->
+                <tr onclick="location.href='twoapplication.html'" style="cursor: pointer;">
+                    <td>Client B</td>
+                    <td>Manchester</td>
+                    <td>clientb@example.com</td>
+                    <td>userB</td>
+                    <td>09/02/2025</td>
+                    <td>12:00 PM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option selected>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ✅ ✅ ❌
+                    </td>
+                </tr>
+
+                <!-- Job Entry 3 -->
+                <tr>
+                    <td>Client C</td>
+                    <td>Birmingham</td>
+                    <td>clientc@example.com</td>
+                    <td>userC</td>
+                    <td>09/03/2025</td>
+                    <td>02:00 PM</td>
+                    <td>
+                        <select class="form-select">
+                            <option selected>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ✅ ❌ ❌
+                    </td>
+                </tr>
+
+                <!-- Job Entry 4 -->
+                <tr>
+                    <td>Client D</td>
+                    <td>Glasgow</td>
+                    <td>clientd@example.com</td>
+                    <td>userD</td>
+                    <td>09/04/2025</td>
+                    <td>09:00 AM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option selected>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ✅ ✅ ❌
+                    </td>
+                </tr>
+
+                <!-- Job Entry 5 -->
+                <tr>
+                    <td>Client E</td>
+                    <td>Belfast</td>
+                    <td>cliente@example.com</td>
+                    <td>userE</td>
+                    <td>09/05/2025</td>
+                    <td>04:00 PM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option selected>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ✅ ❌ ✅
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 My Static Website</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

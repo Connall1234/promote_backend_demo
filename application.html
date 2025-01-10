@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation Bar (Dark Theme) -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="index.html">My Website</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="application.html">Applications</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="jobs.html">Jobs</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="oneapplication.html">One Application</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Search and Filter Section -->
+    <div class="container mt-3 d-flex justify-content-between">
+        <!-- Search Bar -->
+        <input type="text" class="form-control w-50" placeholder="Search by email" id="search-email">
+
+        <!-- Filter Dropdown -->
+        <select class="form-select w-25" id="filter-options">
+            <option value="">Filter by...</option>
+            <option value="applied">Applied</option>
+            <option value="reschedule">Reschedule</option>
+            <option value="waiting-list">Waiting List</option>
+            <option value="cancelled">Cancelled</option>
+            <option value="rejected">Rejected</option>
+            <option value="approved">Approved</option>
+            <option value="working-on">Working On</option>
+        </select>
+    </div>
+
+    <!-- Upcoming Jobs Table -->
+    <div class="container mt-5">
+        <h2>Upcoming Jobs</h2>
+        <table class="table table-bordered">
+            <thead>
+                <tr>
+                    <th>Client</th>
+                    <th>Location</th>
+                    <th>Email</th>
+                    <th>Username</th>
+                    <th>Date</th>
+                    <th>Time</th>
+                    <th>Status</th>
+                    <th>Reminders</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Row 1 (Red Color) -->
+                <tr class="table-danger">
+                    <td>Client A</td>
+                    <td>London</td>
+                    <td>clienta@example.com</td>
+                    <td>userA</td>
+                    <td>09/01/2025</td>
+                    <td>10:00 AM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ❌ ❌ ❌
+                    </td>
+                </tr>
+
+                <!-- Row 2 (Red Color) -->
+                <tr class="table-danger">
+                    <td>Client B</td>
+                    <td>New York</td>
+                    <td>clientb@example.com</td>
+                    <td>userB</td>
+                    <td>08/31/2025</td>
+                    <td>02:00 PM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Pending</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ❌ ❌ ❌
+                    </td>
+                </tr>
+
+                <!-- Row 3 (Normal Color) -->
+                <tr>
+                    <td>Client C</td>
+                    <td>Paris</td>
+                    <td>clientc@example.com</td>
+                    <td>userC</td>
+                    <td>09/02/2025</td>
+                    <td>11:30 AM</td>
+                    <td>
+                        <select class="form-select">
+                            <option>Working on - rescheduled</option>
+                            <option>In Progress</option>
+                            <option>Completed</option>
+                            <option>Cancelled</option>
+                            <option>On Hold</option>
+                        </select>
+                    </td>
+                    <td>
+                        ✅ ✅ ❌
+                    </td>
+                </tr>
+
+                <!-- More rows can be added here as needed -->
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center mt-5">
+        <p>&copy; 2025 My Static Website</p>
+    </footer>
+
+    <!-- Bootstrap JS Bundle -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
